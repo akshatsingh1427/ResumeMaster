@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 
 const API = "http://localhost:3001";
 
-// ─── COLORS ──────────────────────────────────────────────────────────────────
 const C = {
   bg:      "#070b12",
   surface: "#0d1220",
