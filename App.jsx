@@ -22,7 +22,7 @@ const C = {
   cream:   "#f1f5f9",
 };
 
-// ─── JOBS ─────────────────────────────────────────────────────────────────────
+
 const BASE_JOBS = [
   { id:1, title:"Senior Frontend Engineer",  company:"TechNova",      location:"San Francisco",  salary:"$130k–$170k", skills:["React","TypeScript","GraphQL","CSS","Node.js"],            category:"Engineering" },
   { id:2, title:"Full Stack Developer",       company:"CloudBase",     location:"Remote",         salary:"$110k–$145k", skills:["Python","React","PostgreSQL","Docker","AWS"],              category:"Engineering" },
@@ -43,7 +43,6 @@ function calcMatch(userSkills, jobSkills) {
   return Math.round((hits.length / jobSkills.length) * 100);
 }
 
-// ─── LOCAL STORAGE HELPERS ────────────────────────────────────────────────────
 const LS = {
   // users: { email: { name, email, passwordHash } }
   getUsers: () => JSON.parse(localStorage.getItem("raiUsers") || "{}"),
