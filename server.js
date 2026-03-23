@@ -15,7 +15,6 @@ const app = express();
 app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json());
 
-// ── File upload setup ──────────────────────────────────────────────────────
 const upload = multer({
   dest: "uploads/",
   limits: { fileSize: 10 * 1024 * 1024 },
