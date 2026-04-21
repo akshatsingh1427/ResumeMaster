@@ -20,7 +20,6 @@ const upload = multer({
   limits: { fileSize: 10 * 1024 * 1024 },
 });
 
-// ── Parse resume file endpoint ─────────────────────────────────────────────
 app.post("/api/parse-resume", upload.single("resume"), async (req, res) => {
   if (!req.file) return res.status(400).json({ error: "No file uploaded" });
 
